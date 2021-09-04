@@ -1,0 +1,107 @@
+@import url(index.css);
+@import url(posts.css);
+@import url(stat-section.css);
+@import url(../css/landing_page.css);
+
+/* Feeds Posts Header */
+
+.feeds-section{
+    background-color: var(--bg-panel);
+    border: var(--border);
+    border-radius: 10px;
+}
+
+.feeds-header .not-reg-header .header-tit .header-tit-heading{
+    color: var(--color-headings);
+    font-size: var(--main-title-size);
+    font-weight: var(--main-title-weight);
+    margin-bottom: 0;
+}
+
+.feeds-header .not-reg-header .header-tit .header-tit-txt {
+    color: var(--color-text)
+}
+
+.feeds-header .dropdown .prof-not-btn {
+    background-color: var(--bg-panel);
+}
+.write-art-container .write-art-container-link {
+    text-decoration: none;
+}
+.write-art-container .write-art-container-link .write-art-btn {
+    background-color: var(--bg);
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+}
+.write-art-container .write-art-container-link .write-art-btn:hover {
+    border-color: #2962ff;
+    transition: .3s;
+}
+.write-art-container .write-art-container-link .write-art-btn .write-art-img-container{
+    background-color: var(--bg-panel);
+    border-radius: 50%;
+}
+
+.write-art-container .write-art-container-link .write-art-btn .write-art-txt {
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--color-headings)
+}
+
+/* REGESTERED USERS HEADER */
+
+.feeds-header .reg-header .header-tit .user-name-img-container .user-img {
+    width: 3em;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.feeds-header .reg-header .header-tit .user-name-img-container {
+    text-decoration: none;
+}
+.feeds-header .reg-header .header-tit .user-name-img-container .user-name {
+    text-transform: capitalize;
+    color: var(--color-headings) ;
+    margin-left: 0.5em;
+    font-size: var(--sub-title-size);
+}
+
+.posts-nav .posts-nav-tit {
+    font-size: var(--sub-title-size);
+    font-weight: var(--sub-title-weight);
+    color: var(--color-headings) ;
+}
+
+.posts-nav .posts-nav-settings .posts-nav-settings-link {
+    text-decoration: none;
+    margin-left: .5em;
+}
+.posts-nav .posts-nav-settings .posts-nav-settings-link .posts-nav-settings-btn{
+    border: none ;
+    background-color: var(--bg-panel);
+    padding: .3em .5em;
+}
+
+.posts-nav .posts-nav-settings .posts-nav-settings-link .posts-nav-settings-btn:hover {
+    background-color: var(--bg-hover);
+}
+
+.posts-nav .posts-nav-settings .posts-nav-settings-link .posts-nav-settings-btn .posts-nav-st-icon{
+    width: 1.6em;
+    margin-right: .3em;
+}
+
+.posts-nav .posts-nav-settings .posts-nav-settings-link .posts-nav-settings-btn .posts-nav-st-txt {
+    color: var(--color-headings) ;
+    font-weight: var(--sub-title-weight);
+    font-size: var(--sub-title-size);
+}
+
+/* Right side / main-statistics-container */
+
+.main-statistics-container{
+    padding: .5em;
+    padding-top: 0;
+}

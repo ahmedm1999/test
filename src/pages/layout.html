@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" data-theme="light" data-screen="big">
+<!-- Layout Template -->
+
+<head>
+    <meta name="description"
+        content="is a community for developers that shares useful information about IT and develpment strategies, dedicated to people who develop." />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web design, web development ..." />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/feeds.css">
+    <title>Feeds WikisPlus</title>
+</head>
+
+<body class="_body container-fluid">
+    <section class="container-fluid p-0 m-0">
+        <div class="row relative mt-2">
+            <div class="col-sm-12 sol-md-12 mb-3 sticky-top p-0" id="navbar-not-regeseter">
+                <!-- NOT REGESTERED USERS NAV BAR -->
+                <nav class="nav_bar_lg  d-none" id="navbar">
+                    <div class="nav_bar_content d-flex-spacebetween-center p-3 pt-0 pb-0">
+                        <div class="header_logo_lg d-flex-center-center">
+                            <div class="hum-menu-open" id="open_left_side_menu">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <a href="../../index.html" class="logo_link d-flex-center-center">
+                                <div class="logo_png">
+                                    <img class="logo" src="../../assets/brand-icon.png" alt="logo_png" />
+                                </div>
+                                <div class="brand_txt">
+                                    <h1 class="brand">WikisPlus</h1>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header_content d-flex">
+                            <div class="dark-light_toggler" title="what's your mode now ?!">
+                                <img src="../../assets/night-mode.svg" alt="theme-icon" class="theme-icon"
+                                    data-check="checked" data-name="theme" for="switch">
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="prof-not-btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="../../assets/notification.svg" alt="notification" class="not-icon">
+                                </button>
+                                <div class="notification-count"><span id="not-counter">1</span></div>
+                                <div class="dropdown-menu prof-not-menu p-2 fixed">
+                                    <div class="notification-menu-content">
+                                        <div class="notification-menu-header">
+                                            <p class="notification-menu-header-tit"><strong>DID YOU KNOW ?</strong>
+                                            </p>
+                                            <p class="notification-menu-header-txt">Blogging on WikisPlus is totally
+                                                free!</p>
+                                        </div>
+                                        <div class="image-container">
+                                            <img src="../../assets/not.jpg" class="not-img" alt="not-img">
+                                        </div>
+                                        <div class="notification-btn-container">
+                                            <a href="../pages/login.html" class="btn_link" title="click to sign in">
+                                                <button class="btn_prime wel_btn w-100 mt-3">Let's start</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="prof-not-btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="../../assets/user.svg" alt="user" class="user-icon">
+                                </button>
+                                <div class="dropdown-menu prof-not-menu p-2 mr-2 fixed">
+                                    <div class="user-menu-content">
+                                        <ul class="menu_items">
+                                            <a href="../pages/signup.html" class="menu_item">
+                                                <li class="item border-rad-5">Sign up</li>
+                                            </a>
+                                            <a href="../pages/login.html" class="menu_item">
+                                                <li class="item border-rad-5">Login</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- REGESTERED USERS NAV BAR -->
+                <nav class="nav_bar_lg" id="navbar">
+                    <div class="nav_bar_content d-flex-spacebetween-center p-3 pt-0 pb-0">
+                        <div class="header_logo_lg d-flex-center-center">
+                            <div class="hum-menu-open" id="open_left_side_menu">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <a href="../../index.html" class="logo_link d-flex-center-center">
+                                <div class="logo_png">
+                                    <img class="logo" src="../../assets/brand-icon.png" alt="logo_png" />
+                                </div>
+                                <div class="brand_txt">
+                                    <h1 class="brand">WikisPlus</h1>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header_content d-flex">
+                            <div class="dark-light_toggler" title="what's your mode now ?!">
+                                <img src="../../assets/night-mode.svg" alt="theme-icon" class="theme-icon"
+                                    data-check="checked" data-name="theme" for="switch">
+                            </div>
+                            <div class="dropdown">
+                                <a href="#">
+                                    <button type="button" class="prof-not-btn" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="../../assets/notification.svg" alt="notification" class="not-icon">
+                                    </button>
+                                    <div class="notification-count"><span id="not-counter">1</span></div>
+                                </a>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="prof-not-btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="../../assets/menu.svg" alt="user" class="user-icon">
+                                </button>
+                                <div class="dropdown-menu prof-not-menu mr-2 fixed">
+                                    <div class="user-menu-content">
+                                        <ul class="menu_items">
+                                            <a href="#" class="menu_item">
+                                                <li class="item user-menu-header bot_border p-2">
+                                                    <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1627900177404/5jQj9tqoNt.png?w=400&h=400&fit=crop&crop=faces&auto=compress"
+                                                        class="user-img" alt="user-img">
+                                                    <span class="user-name">ahmed mukahal</span>
+                                                </li>
+                                            </a>
+                                            <a href="#" class="menu_item">
+                                                <li class="item bot_border p-2">
+                                                    <p class="blogging-header mb-1">
+                                                        Start your new blog.
+                                                    </p>
+                                                    <p class="blogging-txt mb-0">
+                                                        WikisPlus lets you run your personal blog for free.
+                                                    </p>
+                                                </li>
+                                            </a>
+                                            <a href="#" class="menu_item">
+                                                <li class="item p-2">
+                                                    <img src="../../assets/hashtag.svg" class="item-img" alt="tags-img">
+                                                    <span class="item-txt">My tags</span>
+                                                </li>
+                                            </a>
+                                            <a href="#" class="menu_item">
+                                                <li class="item p-2">
+                                                    <img src="../../assets/bookmark-white.svg" class="item-img"
+                                                        alt="tags-img">
+                                                    <span class="item-txt">Bookmarks</span>
+                                                </li>
+                                            </a>
+                                            <a href="#" class="menu_item mb-3">
+                                                <li class="item bot_border p-2">
+                                                    <img src="../../assets/paper.svg" class="item-img" alt="tags-img">
+                                                    <span class="item-txt">Drafts</span>
+                                                </li>
+                                            </a>
+                                            <a href="#" class="menu_item">
+                                                <li class="item p-2">
+                                                    <img src="../../assets/user.svg" class="item-img" alt="tags-img">
+                                                    <span class="item-txt">Account Settings</span>
+                                                </li>
+                                            </a>
+                                            <a href="#" class="menu_item mb-3">
+                                                <li class="item p-2">
+                                                    <img src="../../assets/logout.svg" class="item-img" alt="tags-img">
+                                                    <span class="item-txt">Logout</span>
+                                                </li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-2">
+                <div class="page_node left_side">
+                    <div class="fixed main-menu-container scroll-y">
+                        <div class="header_logo_lg d-flex-center-center mb-3">
+                            <div class="hum-menu-open" id="open_left_side_menu">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <a href="../../index.html" class="logo_link d-flex-center-center">
+                                <div class="logo_png">
+                                    <img class="logo" src="../../assets/brand-icon.png" alt="logo_png" />
+                                </div>
+                                <div class="brand_txt">
+                                    <h1 class="brand">WikisPlus</h1>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wel_area border-rad-5 w-100">
+                            <div class="wel_btns mt-2">
+                                <div class="btn">
+                                    <a href="../pages/signup.html" class="btn_link" title="join our community">
+                                        <button class="btn_prime wel_btn d-flex-center-center">
+                                            <img src="../../assets/pen.svg" alt="pen" width="30" class="pen-img">
+                                            <p class="btn_txt">Write</p>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_menu mt-1">
+                            <ul class="menu_items">
+                                <a href="feeds.html" class="menu_item">
+                                    <img src="../../assets/news.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Feed</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="../../assets/search.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Search</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="../../assets/geography.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Explore</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="../../assets/hashtag.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Tags</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="../../assets/bookmark-white.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Bookmarks</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="../../assets/down-arrow.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">More</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-10 p-1 pt-0">
+                <div class="main-posts-statistics-container grid-container grid-cols-12 grid-gap-15">
+                    
+                    <div class="main-statistics-container gridfromto-9-13" id="statistics">
+                        <section class="stat-section search-section has_border mb-2">
+                            <div class="section-content">
+                                <div class="serch-area-content">
+                                    <input type="text" name="search" id="search-bar" class="search-input w-100">
+                                    <label for="search-bar" class="search-label" id="search-input-label">
+                                        <i class="fas fa-search"></i>
+                                        Search blogs, developers and tags
+                                    </label>
+                                </div>
+                            </div>
+                            <article class="search-rse-container" id="search-res-container">
+                                <nav class="search-res-nav d-flex-start bot_border p-1 m-0 d-none" id="search-nav-bar">
+                                    <div class="search-option">
+                                        <button class="search-option-bt active" data-search="all">
+                                            All
+                                        </button>
+                                    </div>
+                                    <div class="search-option">
+                                        <button class="search-option-bt" data-search="blog">
+                                            Blogs
+                                        </button>
+                                    </div>
+                                    <div class="search-option">
+                                        <button class="search-option-bt" data-search="user">
+                                            People
+                                        </button>
+                                    </div>
+                                    <div class="search-option">
+                                        <button class="search-option-bt" data-search="tag">
+                                            Tags
+                                        </button>
+                                    </div>
+                                </nav>
+                                <article class="res-container">
+                                    <!-- Here search result will be rendered -->
+                                </article>
+                            </article>
+                        </section>
+                        <section class="stat-section has_border">
+                            <div class="section-content">
+                                <header
+                                    class="stat-section-header p-3 bot_border d-flex-spacebetween-center align-stretch">
+                                    <div class="header-tit-cont">
+                                        <p class="header-tit m-0">Top articles</p>
+                                        <p class="header-sub-tit m-0">Last month</p>
+                                    </div>
+                                    <div class="timing-top-articles">
+                                        <span class="timing p-2 active" data-time="Last week">1w</span>
+                                        <span class="timing p-2" data-time="Last month">1m</span>
+                                        <span class="timing p-2" data-time="Last 3 month">3m</span>
+                                    </div>
+                                </header>
+                                <article class="stat-section-body">
+                                    <div class="top-post d-flex align-stretch p-3">
+                                        <div class="top-post-user">
+                                            <a href="#" class="user-link">
+                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620429143271/mSfIvUaAw.jpeg?w=500&h=500&fit=crop&crop=entropy&auto=compress"
+                                                    alt="user-image" class="user-image">
+                                            </a>
+                                        </div>
+                                        <div class="post-info">
+                                            <div class="post-tit">
+                                                <a href="#" class="post-link">
+                                                    Make Money As A Developer By Selling APIs
+                                                </a>
+                                            </div>
+                                            <div class="post-user-name">
+                                                <a href="#" class="user-link">
+                                                    By Ahmed Mukahal
+                                                </a>
+                                            </div>
+                                            <footer class="post-footer-2 d-flex-spacebetween-center mt-2">
+                                                <div class="action-feild">
+                                                    <a href="#" class="action-feild-link d-flex-spacebetween-center">
+                                                        <div class="action d-flex-center-center">
+                                                            <img src="../../assets/postsSVG/like.svg"
+                                                                alt="post-actoin-icon" class="post-action-icon">
+                                                            <span class="action-number">10</span>
+                                                        </div>
+                                                        <div class="action d-flex-center-center">
+                                                            <img src="../../assets/postsSVG/commentary.svg"
+                                                                alt="post-actoin-icon"
+                                                                class="post-action-icon d-block pt-1">
+                                                            <span class="action-number">10</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="top-post d-flex align-stretch p-3">
+                                        <div class="top-post-user">
+                                            <a href="#" class="user-link">
+                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620429143271/mSfIvUaAw.jpeg?w=500&h=500&fit=crop&crop=entropy&auto=compress"
+                                                    alt="user-image" class="user-image">
+                                            </a>
+                                        </div>
+                                        <div class="post-info">
+                                            <div class="post-tit">
+                                                <a href="#" class="post-link">
+                                                    Make Money As A Developer By Selling APIs
+                                                </a>
+                                            </div>
+                                            <div class="post-user-name">
+                                                <a href="#" class="user-link">
+                                                    By Ahmed Mukahal
+                                                </a>
+                                            </div>
+                                            <footer class="post-footer-2 d-flex-spacebetween-center mt-2">
+                                                <div class="action-feild">
+                                                    <a href="#" class="action-feild-link d-flex-spacebetween-center">
+                                                        <div class="action d-flex-center-center">
+                                                            <img src="../../assets/postsSVG/like.svg"
+                                                                alt="post-actoin-icon" class="post-action-icon">
+                                                            <span class="action-number">10</span>
+                                                        </div>
+                                                        <div class="action d-flex-center-center">
+                                                            <img src="../../assets/postsSVG/commentary.svg"
+                                                                alt="post-actoin-icon"
+                                                                class="post-action-icon d-block pt-1">
+                                                            <span class="action-number">10</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="top-post d-flex align-stretch p-3">
+                                        <div class="top-post-user">
+                                            <a href="#" class="user-link">
+                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620429143271/mSfIvUaAw.jpeg?w=500&h=500&fit=crop&crop=entropy&auto=compress"
+                                                    alt="user-image" class="user-image">
+                                            </a>
+                                        </div>
+                                        <div class="post-info">
+                                            <div class="post-tit">
+                                                <a href="#" class="post-link">
+                                                    Make Money As A Developer By Selling APIs
+                                                </a>
+                                            </div>
+                                            <div class="post-user-name">
+                                                <a href="#" class="user-link">
+                                                    By Ahmed Mukahal
+                                                </a>
+                                            </div>
+                                            <footer class="post-footer-2 d-flex-spacebetween-center mt-2">
+                                                <div class="action-feild">
+                                                    <a href="#" class="action-feild-link d-flex-spacebetween-center">
+                                                        <div class="action d-flex-center-center">
+                                                            <img src="../../assets/postsSVG/like.svg"
+                                                                alt="post-actoin-icon" class="post-action-icon">
+                                                            <span class="action-number">10</span>
+                                                        </div>
+                                                        <div class="action d-flex-center-center">
+                                                            <img src="../../assets/postsSVG/commentary.svg"
+                                                                alt="post-actoin-icon"
+                                                                class="post-action-icon d-block pt-1">
+                                                            <span class="action-number">10</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="top-post d-flex align-stretch p-3">
+                                        <div class="top-post-user">
+                                            <a href="#" class="user-link">
+                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620429143271/mSfIvUaAw.jpeg?w=500&h=500&fit=crop&crop=entropy&auto=compress"
+                                                    alt="user-image" class="user-image">
+                                            </a>
+                                        </div>
+                                        <div class="post-info">
+                                            <div class="post-tit">
+                                                <a href="#" class="post-link">
+                                                    Make Money As A Developer By Selling APIs
+                                                </a>
+                                            </div>
+                                            <div class="post-user-name">
+                                                <a href="#" class="user-link">
+                                                    By Ahmed Mukahal
+                                                </a>
+                                            </div>
+                                            <footer class="post-footer-2 d-flex-spacebetween-center mt-2">
+                                                <div class="action-feild">
+                                                    <a href="#" class="action-feild-link d-flex-spacebetween-center">
+                                                        <div class="action d-flex-center-center">
+                                                            <img src="../../assets/postsSVG/like.svg"
+                                                                alt="post-actoin-icon" class="post-action-icon">
+                                                            <span class="action-number">10</span>
+                                                        </div>
+                                                        <div class="action d-flex-center-center">
+                                                            <img src="../../assets/postsSVG/commentary.svg"
+                                                                alt="post-actoin-icon"
+                                                                class="post-action-icon d-block pt-1">
+                                                            <span class="action-number">10</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section class="mt-2 sticky-top">
+                            <div class="section-content has_border">
+                                <header class="stat-section-header p-3 bot_border d-flex-spacebetween-center">
+                                    <div class="header-tit-cont">
+                                        <p class="header-tit m-0">Top Bloggers</p>
+                                    </div>
+                                    <div class="links">
+                                        <a href="#" class="explore-link">Explore</a>
+                                    </div>
+                                </header>
+                                <article class="stat-section-body">
+                                    <!-- Top Bloggers -->
+                                    <div class="top-blogger p-3">
+                                        <div class="blogger-rank">01</div>
+                                        <div class="blogger-info d-flex-center-center">
+                                            <a href="#" class="user-link">
+                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620429143271/mSfIvUaAw.jpeg?w=500&h=500&fit=crop&crop=entropy&auto=compress"
+                                                    alt="user-image" class="user-image">
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <div class="user-name-foll">
+                                                    <p class="user-name m-0">
+                                                        Ahmed MukahalMukahal
+                                                    </p>
+                                                    <small class="user-followers d-block">Followers:
+                                                        <span class="followers-conter">1000</span>
+                                                    </small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="follow-btn-container">
+                                            <button class="follow-btn has_border border-rad-5 mt-1" data-follow="not">
+                                                Follow
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="top-blogger p-3">
+                                        <div class="blogger-rank">02</div>
+                                        <div class="blogger-info d-flex-center-center">
+                                            <a href="#" class="user-link">
+                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620429143271/mSfIvUaAw.jpeg?w=500&h=500&fit=crop&crop=entropy&auto=compress"
+                                                    alt="user-image" class="user-image">
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <div class="user-name-foll">
+                                                    <p class="user-name m-0">
+                                                        Ahmed MukahalMukahal
+                                                    </p>
+                                                    <small class="user-followers d-block">Followers:
+                                                        <span class="followers-conter">1000</span>
+                                                    </small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="follow-btn-container">
+                                            <button class="follow-btn has_border border-rad-5" data-follow="not">
+                                                Follow
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="top-blogger p-3">
+                                        <div class="blogger-rank">03</div>
+                                        <div class="blogger-info d-flex-center-center">
+                                            <a href="#" class="user-link">
+                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620429143271/mSfIvUaAw.jpeg?w=500&h=500&fit=crop&crop=entropy&auto=compress"
+                                                    alt="user-image" class="user-image">
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <div class="user-name-foll">
+                                                    <p class="user-name m-0">
+                                                        Ahmed MukahalMukahal
+                                                    </p>
+                                                    <small class="user-followers d-block">Followers:
+                                                        <span class="followers-conter">1000</span>
+                                                    </small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="follow-btn-container">
+                                            <button class="follow-btn has_border border-rad-5" data-follow="not">
+                                                Follow
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                            <!-- Top Tags Section here -->
+                            <div class="section-content has_border mt-2">
+                                <header
+                                    class="stat-section-header p-3 bot_border d-flex-spacebetween-center align-stretch">
+                                    <div class="header-tit-cont">
+                                        <p class="header-tit m-0">Top Tags</p>
+                                    </div>
+                                    <div class="links">
+                                        <a href="#" class="explore-link">Explore</a>
+                                    </div>
+                                </header>
+                                <article class="stat-section-body">
+                                    <div class="top-tags">
+                                        <a href="#" class="top-tag-link p-3">
+                                            <div class="tag d-flex-start align-stretch">
+                                                <img class="tag-img"
+                                                    src="data:image/png;base64,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"
+                                                    alt="tag-img">
+                                                <div class="tag-tit">
+                                                    <p class="tag-tit-txt m-0">JavaScript</p>
+                                                    <small id="tag-followers" class="tag-followers">3000
+                                                        followers</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="top-tag-link p-3">
+                                            <div class="tag d-flex-start align-stretch">
+                                                <img class="tag-img"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX33x4AAAD+5R+DdhCVhhL/6B/64h5qYA3/6h/64R7t1h2aixNlWwzdyBu3pRZbUgvp0hxDPQjYwxrEsRjkzRx9cQ8hHgS6qBeyoBY6NAfFshiLfRHTvhrLtxlfVgy+rBcvKgamlhRQSAqRgxJxZg43MQegkBM/OQgbGQMPDQIXFQN3aw4sKAVvZA5RSQoMCwEmIgWgDrxiAAAG2klEQVR4nO2c6ULrKBSAAQUh3dLV2sV00br0jvr+TzdJq3Pb9EAgS+HeOd9f08gXlsDJAUIQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQPUowxn9gTCjfBQJgEMLmlyp1GyWt8WN/9fo+ee63x637DuMsMEu2bt9d0J4WKwoZT9v0kk1rEJYkuwFKSbes6GdsuoF+eGDSing4jrDhrdmQqZZW78g+5lcSKKSEoeLrAr+MubDqzM3jbshGDxaCKcswqtHZUE7t/FK28ooiWlwNJXi9hseiAesaOBryOwdBSvsB9EU3Q+kmmCr6r0UnQzl3FKS0570vuhiyxFmQ0hvfig6GKiohSGniuaE6GMpeKUMa+Z3B2RuKWTlBuvHbTu0N5aqkIZ16bafWhqpsFaZEHsT+w9qQl+yFKXMPXr+xNTQNpA/77Xb+pJuPP3f8zsBtDdlaI/C5juQh8iFJtw/8fcc9z9xsDXWNdM9+XyrkMP/nTex92mZdh7Dg7fmbgJHzapxK/9EMS0PVAQXb+VedYifhm3bkvQKJtaG4Bw2B6Yr49fPHoe8Z6RFLQwaGnvbAKCni77+pECqQ2BuCl91DwyTLwhyTRRhBGmJv+A90WQccR2SfbgOKCdsagov7GPRQg0EwFUgqGo7gmlLhVCCp2EoXAQSaCrE1HEOXrQMZLo3YGm6hy/phvPHM2Bquocv+iGZqO6e5mFMfmPw9hmoEGtKPgF58GiquLehLELNrE1XXh+nULYAVkgnrOtzpDOmmE7SjdZxG0xEPtDsy3CHHOtYmnw2KtLcM1tHaUBuK+uZ5ysIcV+1j3spsmLKNfMfVIOwN4WX+OXeL8Bqry9e1YkNKH7o8sBekg6HtB9J1KBGaIy7fgCWUxwbRIgE5On3HV++WirQVTj06GQrTaz/HNJRx1S3bhC3sFVeLMNbHjhlDbGmvSJ9ICNXomvXlUouULgOoRufMPRZPHBRv/KfSumdfCmX70sjoe2+pZXKEHRIwKf2M/5BvwOc/ilzSFjp+FUsZEiWHr/aKmuD/lShnmPbGovXiKV7zvsoapr8UFsupIy8+v0WVN8wc1292inOPilUMs40l9y9Wih7D/9UMsxyawZOF4cpfJVY1TB15dFus2PVWidUNs5uwrjHWmDLxVom1GGaNdfFoVpz5emPUZJg5jowdsu2rEmszzHZ8xSbH2otuSY2GmWMHSsA8kngaa2o1zNrqWmd44yk2VbMhIXygMfQ1davdkDBdQO5vqcP0lnBWg69FVAOGRMKvxqWfoaYJQwHH4zxN3JwNhYU8Bw0bzhHT9QG2hwrT0hVGycXXuHBQhBM3tDetA8HgZFdd0uFOF9WPsizMwsWe42OrAd55oZpScfBoBLhBie/PwO+hGTKS9TVN1+JgHAJK4FYy+bn2YhNC/qbgYKprGFVRsnv8B3DKMrydCRjYeeektlvmrijBmza0SY+PfgoGbnQU8Jfri17LyHkKbdekqHlbNDL1ZuJk9zXUuTi83skX+fIkjMSgqNlOO6h/TpP2nPOauXyIcCOdyPPbLH9dXrPW9kVdRkPtfoTHH7n/EeUVJTjo0bvT2mYxPAl70pxExDSLi6+6vyUKIDX7LbdXjnfhwpyOekx7ysA7lMuWbze/2dc70Cg5BF8DyUmhhNRlVA5OSg7vtDjysZDnuWyCx9qPi/VOS9VI9/lrM2P8sOWTi0R7zszp0zafM7DadbIzvpgQ2S3J0PA46vQzNa2U3vy2td3rAyq59lSYz9a72U273WlrbLglpY91L/ELSmUk975nwEjqzrDmt6EhabmQt9zTFvD+UTdea4/SsK/ShbmYP/IKj+uH+qdsmpmTDZc3s07Z09LEtyfucqDTKdASgBV9eCli0MictFypXsHkWWKdlQjSzDfgkgfmLMD5sYg+Kwj2GwoGC1302YTuaYvIJdnrnDdtlKgqTomERz60T1sQ4wvdRINZUc6Kz4ayKA4vRIp4g4MLdSm6NdQHc3OS8MEKZppO3ROR5TGOGb2iQ3Ld8tkOzBtPv1Qc3MEL0Speop7E26x4vcrRClmw1ALLo4Cc8tl2V9oJJWRSvDqwT61nbGp36tc1d10IPjR2oIcpcykMkwtwe/4pm67TLasjeLzTHG282rrvj0xX9Mu5flb4uPaxi00xTma37bOZyXtvm0SyXGcRTJLl7infxzfj9cDjmd6CccniwXKWJLPlIBaS251Nrr8f45yMFsuk271PlosRSe/of5+lUuJAbSeQfN8vu2VNd0QQBEEQBEEQBEH+X/wL/UVVyyD3P9kAAAAASUVORK5CYII="
+                                                    alt="tag-img">
+                                                <div class="tag-tit">
+                                                    <p class="tag-tit-txt m-0">JavaScript</p>
+                                                    <small id="tag-followers" class="tag-followers">3000
+                                                        followers</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="top-tag-link p-3">
+                                            <div class="tag d-flex-start align-stretch">
+                                                <img class="tag-img"
+                                                    src="data:image/png;base64,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"
+                                                    alt="tag-img">
+                                                <div class="tag-tit">
+                                                    <p class="tag-tit-txt m-0">JavaScript</p>
+                                                    <small id="tag-followers" class="tag-followers">3000
+                                                        followers</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mob-left-menu" id="mob-left-menu-container">
+        <div class="mob-left-menu-content" id="mob-left-menu">
+            <div class="wel_area">
+                <div class="wel_btns mt-2">
+                    <div class="btn">
+                        <a href="src/pages/signup.html" class="btn_link" title="join our community">
+                            <button class="btn_prime wel_btn d-flex-center-center">
+                                <img src="../../assets/pen.svg" alt="pen" width="30" class="pen-img">
+                                <p class="btn_txt">Write</p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main_menu mt-1 main_menu_mob">
+                <ul class="menu_items">
+                    <a href="#" class="menu_item">
+                        <img src="../../assets/news.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Feed</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="../../assets/search.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Search</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="../../assets/geography.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Explore</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="../../assets/hashtag.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Tags</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="../../assets/bookmark-white.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Bookmarks</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="../../assets/down-arrow.svg" alt="item_icon" class="item_icon">
+                        <li class="item">More</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="close-left-menu">
+            <img src="../../assets/cancel.svg" alt="close" id="close-menu-btn">
+        </div>
+    </section>
+    <script src="../../src/JS/index.js"></script>
+    <script src="../JS/search-autocomplete.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="../JS/helper.js"></script>
+</body>
+
+</html>

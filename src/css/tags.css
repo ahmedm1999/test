@@ -1,0 +1,68 @@
+@import url(index.css);
+/* @import url(../css/feeds.css); */
+@import url(search-area.css);
+@import url(../css/landing_page.css);
+
+.header-row {
+    background-color: var(--bg-panel);
+}
+
+.tags-section-row .tags-node {
+    background-color: var(--bg-panel);
+    padding: 0;
+}
+.tags-section-row .tags-node .tags-node-body .node-tag {
+    padding: 0.2rem 1rem ;
+}
+.tags-section-row .tags-node .tags-node-body .node-tag:hover {
+    background-color: var(--bg-hover);
+}
+.tags-section-row .tags-node .tags-node-body .node-tag .tag-info .tag-img {
+    width: 4em;
+    margin-right: 15px;
+}
+.tags-section-row .tags-node .tags-node-body .node-tag .tag-info .tag-info-txt{
+    width: 200px;
+}
+.tags-section-row .tags-node .tags-node-body .node-tag .tag-info .tag-info-txt .tag-discription{
+    color: var(--color-text);
+    overflow:hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.tags-section-row .tags-node .tags-node-body .node-tag .tag-posts .tag-post-txt,
+.tags-section-row .tags-node .tags-node-body .node-tag .tag-followers .tag-followers-txt,
+.tags-section-row .tags-node .tags-node-body .node-tag .tag-date .tag-date-txt
+{
+    background-color: var(--bg-hover);
+}
+
+/*  Tags Cards */
+
+.tags-cards-row {
+    background-color: var(--bg-panel);
+}
+.search-cards-tags {
+    background-color: var(--bg);
+}
+
+.fa-search  {
+    color: var(--color-headings) ;
+    cursor: pointer;
+}
+
+.tags-cards-container .tag-card .block-link:hover {
+    background-color: var(--bg-hover);
+}
+.tags-cards-container .tag-card .block-link .tag-card-header .tag-img {
+    width: 4em;
+    border-radius: 50%;
+    margin-right: .5em;
+}
+
+.tags-cards-container .tag-card .block-link .tag-card-header .tag-name {
+    color: var(--color-headings) ;
+    /* font-size: var(--main-title-size); */
+}

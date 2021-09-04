@@ -1,0 +1,158 @@
+@import url(search-area.css);
+.stat-section, .section-content {
+    background-color: var(--bg-panel);
+    border-radius: 10px;
+}
+
+.section-content .stat-section-header .header-tit-cont .header-tit{
+    color: var(--color-headings);
+    font-size: 19px;
+    font-weight: 500;
+}
+.stat-section .section-content .stat-section-header .header-tit-cont .header-sub-tit {
+    color: var(--color-text);
+    font-size: var(--sub-sub-text-size);
+}
+
+.stat-section .section-content .stat-section-header .timing-top-articles .timing{
+    color: var(--color-text);
+    font-size: var(--sub-sub-text-size);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.section-content .stat-section-header .timing-top-articles .timing:hover {
+    background-color: var(--bg-hover);
+}
+.section-content .stat-section-header .timing-top-articles .active {
+    color: var(--main-btn-background);
+    background-color: var(--bg-hover);
+    font-weight: 600;
+}
+.stat-section-body .top-post .top-post-user .user-link {
+    text-decoration: none;
+}
+.stat-section-body .top-post .top-post-user .user-link .user-image{
+    width: 3em;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.stat-section-body .top-post .post-info {
+    margin-left: 10px;
+}
+.stat-section-body .top-post .post-info .post-tit .post-link {
+    text-decoration: none;
+    color: var(--color-headings);
+    font-weight: 600;
+}
+.stat-section-body .top-post .post-info .post-user-name .user-link{
+    color: var(--color-text);
+    font-size: var(--sub-sub-text-size);
+    text-decoration: none;
+    font-weight: 500;
+}
+.post-footer-2 .action-feild .action-feild-link .action{
+    padding-right: 1rem;
+}
+.post-footer-2 .action-feild .action-feild-link {
+    text-decoration: none;
+}
+.post-footer-2 .action-feild .action-feild-link .action .post-action-icon {
+    width: 1.3em;
+    object-fit: contain;
+}
+.post-footer-2 .action-feild .action-feild-link .action .action-number {
+    color: var(--color-headings) ;
+    display: inline-block;
+    font-size: var(--sub-title-size);
+    margin-left: .3em;
+}
+/* Top bloggers */
+
+.section-content .stat-section-header .links .explore-link {
+    color: var(--main-btn-background);
+    text-decoration: none;
+    padding: .2em;
+    font-size: var(--sub-text-size);
+    border-radius: 5px;
+}
+.section-content .stat-section-header .links .explore-link:hover {
+    background-color: var(--bg-hover);
+}
+.top-blogger  {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.top-blogger .blogger-info .user-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.top-blogger .blogger-info .user-link .user-name {
+    color: var(--color-headings);
+    font-weight: 600;
+    max-width: 100px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.top-blogger .blogger-info .user-link .user-image {
+    width: 2.5em;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.top-blogger .blogger-info .user-link .user-name-foll {
+    margin-left: 10px;
+}
+.top-blogger .blogger-info .user-link .user-name-foll .user-followers {
+    color: var(--sub-text-size);
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.top-blogger .blogger-rank {
+    font-size: var(--main-title-size);
+    font-weight: var(--main-title-weight);
+    color: var(--color-text)
+}
+
+.top-blogger .follow-btn-container .follow-btn {
+    background-color: var(--bg-panel);
+    padding: 5px 10px;
+    color: var(--color-text)
+}
+.top-blogger .follow-btn-container .follow-btn:hover {
+    border-color: var(--main-btn-background);
+}
+
+/* Top tags */
+
+.section-content .stat-section-body .top-tags .top-tag-link{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+.section-content .stat-section-body .top-tags .top-tag-link:hover {
+    background-color: var(--bg-hover);
+}
+.section-content .stat-section-body .top-tags .top-tag-link .tag-tit {
+    line-height: 20px;
+}
+.section-content .stat-section-body .top-tags .top-tag-link .tag .tag-img {
+    width: 3em;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.section-content .stat-section-body .top-tags .top-tag-link .tag .tag-tit .tag-tit-txt {
+    color: var(--color-headings);
+    font-weight: var(--main-title-weight);
+}
+
+.section-content .stat-section-body .top-tags .top-tag-link .tag .tag-tit .tag-followers {
+    color: var(--color-text);
+    font-size: var(--sub-sub-text-size)
+}

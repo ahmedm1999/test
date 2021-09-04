@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" data-theme="light" data-screen="big">
+<!-- Landig Page -->
+
+<head>
+    <meta name="description"
+        content="is a community for developers that shares useful information about IT and develpment strategies, dedicated to people who develop." />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web design, web development ..." />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/css/landing_page.css">
+    <title>WikisPlus</title>
+</head>
+
+<body class="_body container-fluid">
+    <section class="container-fluid landing_page p-0">
+        <div class="row relative">
+            <div class="col-sm-12 sol-md-12 mb-3 sticky-top">
+                <nav class="nav_bar_lg" id="navbar">
+                    <div class="nav_bar_content d-flex-spacebetween-center">
+                        <div class="header_logo_lg d-flex-center-center">
+                            <div class="hum-menu-open" id="open_left_side_menu">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <a href="index.html" class="logo_link d-flex-center-center">
+                                <div class="logo_png">
+                                    <img class="logo" src="assets/brand-icon.png" alt="logo_png" />
+                                </div>
+                                <div class="brand_txt">
+                                    <h1 class="brand">WikisPlus</h1>
+                                </div>
+                            </a>
+                            <div class="search_container">
+                                <div class="input-group d-none-1023">
+                                    <input type="text" class="form-control" placeholder="Search community ..">
+                                    <div class="input-group-append">
+                                        <button class="btn s-btn-secondary" type="button" title="Go">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_content d-flex">
+                            <div class="dark-light_toggler" title="what's your mode now ?!">
+                                <img src="assets/night-mode.svg" alt="theme-icon" class="theme-icon" data-check="checked" data-name="theme" for="switch">
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="prof-not-btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/notification.svg" alt="notification" class="not-icon">
+                                </button>
+                                <div class="notification-count"><span id="not-counter">1</span></div>
+                                <div class="dropdown-menu prof-not-menu p-2">
+                                    <div class="notification-menu-content">
+                                        <div class="notification-menu-header">
+                                            <p class="notification-menu-header-tit"><strong>DID YOU KNOW ?</strong>
+                                            </p>
+                                            <p class="notification-menu-header-txt">Blogging on WikisPlus is totally
+                                                free!</p>
+                                        </div>
+                                        <div class="image-container">
+                                            <img src="assets/not.jpg" alt="not-img" width="200">
+                                        </div>
+                                        <div class="notification-btn-container">
+                                            <a href="#" class="btn_link" title="click to sign in">
+                                                <button class="btn_prime wel_btn w-100 mt-3">Let's start</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="prof-not-btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/user.svg" alt="user" class="user-icon">
+                                </button>
+                                <div class="dropdown-menu prof-not-menu p-2 mr-2">
+                                    <div class="user-menu-content">
+                                        <ul class="menu_items">
+                                            <a href="#" class="menu_item">
+                                                <li class="item border-rad-5">Sign up</li>
+                                            </a>
+                                            <a href="src/pages/login.html" class="menu_item">
+                                                <li class="item border-rad-5">Login</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_btns_container">
+                                <div class="btn">
+                                    <a href="src/pages/login.html" class="btn_link" title="click to sign in">
+                                        <button class="btn_second prime-link-login">Login</button>
+                                    </a>
+                                </div>
+                                <div class="btn">
+                                    <a href="src/pages/signup.html" class="btn_link" title="join our community">
+                                        <button class="btn_prime prime-link-signup">Create free account</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-2">
+                <div class="page_node left_side">
+                    <div class="fixed main-menu-container scroll-y">
+                        <div class="wel_area border-rad-5 w-100">
+                            <div class="wel_btns mt-2">
+                                <div class="btn">
+                                    <a href="src/pages/signup.html" class="btn_link" title="join our community">
+                                        <button class="btn_prime wel_btn d-flex-center-center">
+                                            <img src="assets/pen.svg" alt="pen" width="30" class="pen-img">
+                                            <p class="btn_txt">Write</p>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_menu mt-1">
+                            <ul class="menu_items">
+                                <a href="src/pages/feeds.html" class="menu_item">
+                                    <img src="assets/news.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Feed</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="assets/search.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Search</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="assets/geography.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Explore</li>
+                                </a>
+                                <a href="src/pages/tags/index.html" class="menu_item">
+                                    <img src="assets/hashtag.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Tags</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="assets/bookmark-white.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">Bookmarks</li>
+                                </a>
+                                <a href="#" class="menu_item">
+                                    <img src="assets/down-arrow.svg" alt="item_icon" class="item_icon">
+                                    <li class="item">More</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-10">
+                <div class="page_node rigth_side has_border border-rad-5 text-center">
+                    <div class="rigth_side_block has_bott_border w-100">
+                        <div class="wel_block_content p-1">
+                            <h2 class="main_tit">
+                                <strong>WikisPlus</strong> is a great community of amazing developers!<br />Start
+                                writting now for
+                                free!
+                            </h2>
+                            <p class="sub_main_txt">
+                                Write your own blogs, share, ask and learn in one place.
+                            </p>
+                            <div class="wel_block_btn  mt-3">
+                                <div class="btn">
+                                    <a href="src/pages/login.html" class="btn_link" title="join our community">
+                                        <button class="btn_prime">Start your FREE personal
+                                            blog</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mob-left-menu" id="mob-left-menu-container">
+        <div class="mob-left-menu-content" id="mob-left-menu">
+            <div class="wel_area has_border border-rad-5 p-2">
+                <div class="wel_txt">
+                    <strong>WikisPlus</strong> is a great community of amazing developers!<br />Start writting now for
+                    free!
+                </div>
+                <div class="wel_btns mt-2">
+                    <div class="btn">
+                        <a href="src/pages/signup.html" class="btn_link" title="join our community">
+                            <button class="btn_prime wel_btn d-flex-center-center">
+                                <img src="assets/pen.svg" alt="pen" width="30" class="pen-img">
+                                <p class="btn_txt">Write</p>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="btn mt-2">
+                        <a href="src/pages/login.html" class="btn_link" title="click to sign in">
+                            <button class="btn_second wel_btn">Login</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main_menu mt-1 main_menu_mob">
+                <ul class="menu_items">
+                    <a href="src/pages/feeds.html" class="menu_item">
+                        <img src="assets/news.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Feed</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="assets/search.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Search</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="assets/geography.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Explore</li>
+                    </a>
+                    <a href="src/pages/tags/index.html" class="menu_item">
+                        <img src="assets/hashtag.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Tags</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="assets/bookmark-white.svg" alt="item_icon" class="item_icon">
+                        <li class="item">Bookmarks</li>
+                    </a>
+                    <a href="#" class="menu_item">
+                        <img src="assets/down-arrow.svg" alt="item_icon" class="item_icon">
+                        <li class="item">More</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="close-left-menu">
+            <img src="assets/cancel.svg" alt="close" id="close-menu-btn">
+        </div>
+    </section>
+    <script src="src\JS\index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

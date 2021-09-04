@@ -1,0 +1,143 @@
+.posts-container .post .post-header .post-user .user-link{
+    text-decoration: none;
+    height: 50px;
+}
+.posts-container .post .post-header .post-user .user-link .post-user-img {
+    width: var(--user-img-size);
+    object-fit: contain;
+    border-radius: 50%;
+}
+.posts-container .post .post-header .post-user .user-link .post-user-info {
+    margin-left: .5em;
+    line-height: 1.2em;
+}
+.posts-container .post .post-header .post-user .user-link .post-user-info .post-user-name{
+    color: var(--color-headings);
+    font-size: var(--sub-title-size);
+}
+.posts-container .post .post-header .post-user .user-link .post-user-info .post-date {
+    color: var(--color-text);
+    font-size: var(--sub-sub-text-size);
+}
+.posts-container .post .post-header .post-settings .settings-option .settings-btn {
+    background-color: var(--bg-panel);
+    border: none;
+    color: var(--main-btn-background);
+    font-size: var(--sub-sub-text-size);
+}
+.posts-container .post .post-header .post-settings .settings-option .settings-btn:hover {
+    background-color: var(--bg-hover);
+}
+
+/* POST BODY */
+.posts-container .post .post-body .post-body-content .post-body-left-side .tags-container {
+    margin-bottom: 1rem;
+}
+.posts-container .post .post-body .post-body-content .post-body-left-side .tags-container .tag-link{
+    text-decoration: none;
+    background-color: var(--bg-hover);
+    margin-right: .3em;
+    color: var(--color-text);
+    font-size: var(--sub-sub-text-size);
+    display: inline-block;
+}
+.posts-container .post .post-body .post-body-content .post-body-left-side .post-body-group-link{
+    text-decoration: none;
+}
+.posts-container .post .post-body .post-body-content .post-body-left-side .post-body-group-link .post-title {
+    color: var(--color-headings);
+    font-size: var(--posts-title-size);
+}
+.posts-container .post .post-body .post-body-content .post-body-left-side .post-body-group-link .post-description {
+    color: var(--color-text);
+    font-size: var(--sub-title-size);
+    max-width: 350px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.posts-container .post .post-body .post-body-content .post-body-right-side .post-body-group-link {
+    display: inline-block;
+}
+.posts-container .post .post-body .post-body-content .post-body-right-side .post-body-group-link .post-img{
+    width: 20em;
+    margin-left: 30px;
+    object-fit: contain;
+}
+
+.post-footer .action-feild .action-feild-link .action{
+    padding-right: 1rem;
+}
+.post-footer .action-feild .action-feild-link {
+    text-decoration: none;
+}
+.post-footer .action-feild .action-feild-link .action .post-action-icon {
+    width: 1.6em;
+    object-fit: contain;
+}
+.post-footer .action-feild .action-feild-link .action .action-number {
+    color: var(--color-headings) ;
+    display: inline-block;
+    font-size: var(--sub-title-size);
+    margin-left: .3em;
+}
+
+/* Skeleton */
+
+.card1 {
+    padding: 16px 10px;
+  width: 100%;
+  height: 208px;
+  background-color: var(--bg-panel);
+}
+
+
+.element1 {
+    top: 16px;
+    height: 40px;
+    margin-left: 10px;
+    width: 100px;
+}
+.element2 {
+    top: 16px;
+    height: 68px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.element3 {
+    top: 58px;
+    height: 14px;
+    width: 296px;
+}
+
+.element4 {
+    top: 68px;
+    height: 14px;
+    width: 100%;
+}
+
+.gradient {
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: var(--bg);
+    background: linear-gradient(to right, var(--bg) 8%, var(--bg) 38%, var(--bg) 54%);
+    background-size: 1000px 640px;
+    
+    position: relative;
+    
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
